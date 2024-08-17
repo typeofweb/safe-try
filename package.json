@@ -1,6 +1,6 @@
 {
 	"name": "safe-try",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "",
 	"$schema": "https://json.schemastore.org/package",
 	"type": "module",
