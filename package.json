@@ -1,0 +1,40 @@
+{
+	"name": "try_",
+	"version": "0.0.0",
+	"description": "",
+	"$schema": "https://json.schemastore.org/package",
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "rimraf dist/* && tsup --config tsup.config.ts",
+		"prepublishOnly": "pnpm build",
+		"dev": "tsup --config tsup.config.ts --watch"
+	},
+	"keywords": [
+		"try",
+		"async",
+		"await",
+		"promise"
+	],
+	"author": "Michał Miszczyszyn <michal@mmiszy.pl> (https://typeofweb.com/)",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "20.15.0",
+		"prettier": "3.3.3",
+		"tsup": "8.2.4",
+		"typescript": "5.5.4"
+	},
+	"files": [
+		"package.json",
+		"dist",
+		"README.md",
+		"LICENSE.md"
+	],
+	"sideEffects": false,
+	"packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+}
