@@ -10,6 +10,14 @@
 			"types": "./dist/index.d.ts"
 		}
 	},
+	"homepage": "https://github.com/typeofweb/safe-try#readme",
+	"bugs": {
+		"url": "https://github.com/typeofweb/safe-try/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/typeofweb/safe-try.git"
+	},
 	"scripts": {
 		"build": "rimraf dist/* && tsup --config tsup.config.ts",
 		"prepublishOnly": "pnpm build",
