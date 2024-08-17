@@ -7,6 +7,6 @@ export default defineConfig({
 	clean: true,
 	format: ["esm"],
 	dts: true,
-	target: "node20",
-	minify: true,
+	target: ["node20", "deno1", "chrome127", "safari17"],
+	minify: false,
 });
